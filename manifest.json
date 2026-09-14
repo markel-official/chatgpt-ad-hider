@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "ChatGPT Ad Hider",
+	"version": "1.0.0",
+	"description": "Hides the last child of ChatGPT's conversation screenshot content.",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://chatgpt.com/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"run_at": "document_idle"
+		}
+	]
+}
